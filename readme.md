@@ -1,5 +1,5 @@
 # 我的個人簡介
-<img src="images/63428ok-1.jpg" alt="個人頭像" width="50" height="150">
+<img src="images/63428ok-1.jpg" alt="個人頭像" width="100" height="150">
 
 一段關於你的自我介紹，簡要描述你的背景、興趣和專業領域。
 
