@@ -8,9 +8,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
         }
         header, section {
             padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
         }
         header {
             background-color: #f4f4f4;
@@ -19,10 +22,12 @@
         .profile-picture {
             width: 150px;
             height: 150px;
-            background-color: #ccc;
+            background-image: url('images/63428ok-1.jpg');
+            background-size: cover;
+            background-position: center;
             margin: 0 auto;
             border-radius: 50%;
-            /* 在此處添加個人照片 */
+            border: 2px solid #000;
         }
         .section-title {
             font-size: 24px;
@@ -32,40 +37,65 @@
         .content {
             font-size: 16px;
             line-height: 1.6;
+            color: #333;
         }
         ul {
             list-style-type: disc;
             margin-left: 40px;
+        }
+        .link {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>我的姓名</h1>
-    <!-- 個人頭像留白區域 -->
+    
+    <!-- 個人頭像 -->
     <div class="profile-picture"></div>
-    <!-- 個人簡介留白區域 -->
-    <p class="content">在此處填寫個人簡介。</p>
+    <h1>Chih-Yu Jian</h1>
+    <h1> (簡志宇)</h1>
+    <!-- 個人簡介 -->
+    <p class="content">OPEN TO WORK</p>
+    <p class="content">Artificial Intelligence Programmer · Artificial Intelligence Researcher · Artificial Intelligence Engineer · Software Programmer</p>
 </header>
 
 <section>
-    <h2 class="section-title">資歷</h2>
-    <!-- 資歷留白區域 -->
+    <h2 class="section-title">About me</h2>
+    <!-- 資歷範例 -->
     <div class="content">
-        <p>在此處填寫您的教育背景、工作經歷等。</p>
+        <p>I graduated with a bachelor's degree from the Department of Information Management at Pingtung University of Science and Technology in 2018. I also obtained my master's degree from the same department in 2020.</p>
+        <p>My main interests focus on computer vision and machine/deep learning, as well as the applications of medical imaging and natural language processing.</p><br>
+        <p>From September 2020 to November 2022, I served as a master's researcher at Chang Gung Medical Foundation Hospital. My primary research project was the task of stroke image recognition in MRI images, which has been completed and published in NeuroImage: Clinical. Since December 2022, I have been working as a master's researcher at Far Eastern Memorial Hospital and National Cheng Kung University, focusing on the research topics of satellite HSI transmission tasks and natural language applications in electronic medical records. The aforementioned studies have been published in ACM and IEEE: TGRS. For work projects not mentioned, please refer to my Github.</p><br>
+        <p>Over the years, along with my team, I have won several significant challenges at top conferences and published papers in journals such as IEEE ICASSP and IEEE VCIP. For instance, we secured third place in the Learning to Drive Challenge at the IEEE International Conference on Computer Vision (ICCV) and first place in the COV19D Challenge.</p>
     </div>
 </section>
 
 <section>
-    <h2 class="section-title">擅長技能</h2>
-    <!-- 擅長技能留白區域 -->
+    <h2 class="section-title">Skills</h2>
+    <!-- 擅長技能範例 -->
     <div class="content">
         <ul>
-            <li>技能一</li>
-            <li>技能二</li>
-            <li>技能三</li>
-            <!-- 可自行添加更多技能 -->
+            <li>Python</li>
+            + DeepLearning、Computer Vision、Nature Language Process (NLP)、Large Language Model (LLM)
+            <li>Linux</li>
+            + Ubuntu
+            <li>Git / GitHub</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">相關網站</h2>
+    <!-- 相關網站範例 -->
+    <div class="content">
+        <ul>
+            <li><a class="link" href="https://www.linkedin.com/in/chihyujiantw" target="_blank">LinkedIn</a></li>
         </ul>
     </div>
 </section>
