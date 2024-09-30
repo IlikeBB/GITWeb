@@ -1,5 +1,5 @@
 # 我的個人簡介
-<img src="images/63428ok-1.jpg" alt="個人頭像" width="100" height="150">
+<img src="../images/63428ok-1.jpg" alt="個人頭像" width="100" height="150">
 I graduated with a bachelor's degree from the Department of Information Management at Pingtung University of Science and Technology in 2018. I also obtained my master's degree from the same department in 2020.
 
 My main interests focus on computer vision and machine/deep learning, as well as the applications of medical imaging and natural language processing.
