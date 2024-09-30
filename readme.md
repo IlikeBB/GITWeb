@@ -1,8 +1,12 @@
 # 我的個人簡介
 <img src="images/63428ok-1.jpg" alt="個人頭像" width="100" height="150">
+I graduated with a bachelor's degree from the Department of Information Management at Pingtung University of Science and Technology in 2018. I also obtained my master's degree from the same department in 2020.
 
-一段關於你的自我介紹，簡要描述你的背景、興趣和專業領域。
+My main interests focus on computer vision and machine/deep learning, as well as the applications of medical imaging and natural language processing.
 
+From September 2020 to November 2022, I served as a master's researcher at Chang Gung Medical Foundation Hospital. My primary research project was the task of stroke image recognition in MRI images, which has been completed and published in NeuroImage: Clinical. Since December 2022, I have been working as a master's researcher at Far Eastern Memorial Hospital and National Cheng Kung University, focusing on the research topics of satellite HSI transmission tasks and natural language applications in electronic medical records. The aforementioned studies have been published in ACM and IEEE: TGRS. For work projects not mentioned, please refer to my Github.
+
+Over the years, along with my team, I have won several significant challenges at top conferences and published papers in journals such as IEEE ICASSP and IEEE VCIP. For instance, we secured third place in the Learning to Drive Challenge at the IEEE International Conference on Computer Vision (ICCV) and first place in the COV19D Challenge.
 ## 目錄
 
 - [個人資歷](#個人資歷)
