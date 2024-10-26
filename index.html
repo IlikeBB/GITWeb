@@ -76,7 +76,34 @@
             opacity: 0;
             transition: opacity 1s ease-in-out;
         }
+
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
     
+        .about-left, .about-right {
+            width: 48%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    
+        .about-left h3, .about-right h3 {
+            font-size: 20px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+    
+        .about-left p, .about-right p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #333;
+        }
+
         .slide.show {
             opacity: 1;
         }
@@ -85,13 +112,15 @@
         .slide:nth-child(1) {
             background-image: url('images/switch_image/image1.jpeg');
         }
-    
         .slide:nth-child(2) {
             background-image: url('images/switch_image/image2.jpeg');
         }
-    
+        /* 針對每張圖片設置class */
         .slide:nth-child(3) {
             background-image: url('images/switch_image/image3.jpeg');
+        }
+        .slide:nth-child(4) {
+            background-image: url('images/switch_image/image4.jpeg');
         }
     </style>
 </head>
@@ -108,25 +137,21 @@
     [<a class="link" href="https://www.linkedin.com/in/chihyujiantw" target="_blank">LinkedIn</a> | <a class="link" href="https://github.com/IlikeBB?tab=repositories" target="_blank">Github</a>]
 </header>
 <section>
-    <h2 class="section-title">關於我</h2>
-    <div class="content">
-        <p>我於2018年畢業於屏東科技大學資訊管理學系，並於2020年獲得同系碩士學位。我的主要興趣集中在計算機視覺與機器學習/深度學習，以及醫療影像應用和自然語言處理方面。</p>
-        <br>
-        <p>2020年9月至2022年11月，我擔任長庚醫療財團法人醫院的碩士研究員，主要研究項目為MRI影像中的中風影像識別，該研究已發表於《NeuroImage: Clinical》。自2022年12月起，我在遠東醫院和國立成功大學擔任碩士研究員，專注於衛星HSI傳輸任務和電子病歷的自然語言應用研究。上述研究成果已發表於ACM和IEEE: TGRS期刊。對於未提及的工作項目，請參考我的GitHub。</p>
-        <br>
-        <p>多年來，我與團隊共同在頂尖會議中取得了多次重要挑戰的勝利，並在期刊如《IEEE ICASSP》和《IEEE VCIP》上發表論文。例如，我們在IEEE國際計算機視覺會議（ICCV）中的Learning to Drive挑戰賽中獲得第三名，並在COV19D挑戰賽中奪得第一名。</p>
+    <h2 class="section-title">關於我 / About Me</h2>
+    <div class="about-container">
+        <div class="about-left">
+            <p>我於2018年取得屏東科技大學資訊管理學系學士學位，並於2020年完成碩士學位。我的研究興趣主要集中於計算機視覺、深度學習、醫療影像處理和自然語言處理等領域，特別關注這些技術在實際應用中的創新與突破。</p>
+            <p>2020年至2022年間，我在長庚醫療財團法人進行中風MRI影像的識別研究，並開發了相關的分割與分類模型，該研究成果已發表於高影響力期刊《NeuroImage: Clinical》。自2022年起，我於遠東醫院與國立成功大學從事衛星高光譜影像（HSI）傳輸與電子病歷應用研究，這些研究成果已發表於ACM和IEEE TGRS期刊。</p>
+            <p>多年來，我與團隊積極參與多項國際頂尖會議與競賽，並獲得多項殊榮。我們的研究成果曾在《IEEE ICASSP》和《IEEE VCIP》等權威期刊上發表，並在IEEE國際計算機視覺會議（ICCV）的Learning to Drive挑戰賽中獲得第三名，以及在COV19D挑戰賽中取得第一名的佳績。</p>
+        </div>
+        <div class="about-right">
+            <p>I graduated with a bachelor's degree in Information Management from Pingtung University of Science and Technology in 2018 and obtained a master's degree in 2020. My research focuses on computer vision, deep learning, medical imaging, and natural language processing.</p>
+            <p>From 2020 to 2022, I conducted stroke image recognition research in MRI at Chang Gung Hospital, published in NeuroImage: Clinical. Since 2022, I have been focusing on satellite HSI transmission and EMR research at Far Eastern Memorial Hospital and NCKU, with publications in ACM and IEEE: TGRS.</p>
+            <p>My team and I have achieved multiple awards at top conferences and published in journals such as IEEE ICASSP and IEEE VCIP. Highlights include third place in the Learning to Drive Challenge at ICCV and first place in the COV19D Challenge.</p>
+        </div>
     </div>
 </section>
-<section>
-    <h2 class="section-title">About me</h2>
-    <!-- 資歷範例 -->
-    <div class="content">
-        <p>I graduated with a bachelor's degree from the Department of Information Management at Pingtung University of Science and Technology in 2018. I also obtained my master's degree from the same department in 2020.</p>
-        <p>My main interests focus on computer vision and machine/deep learning, as well as the applications of medical imaging and natural language processing.</p>
-        <p>From September 2020 to November 2022, I served as a master's researcher at Chang Gung Medical Foundation Hospital. My primary research project was the task of stroke image recognition in MRI images, which has been completed and published in NeuroImage: Clinical. Since December 2022, I have been working as a master's researcher at Far Eastern Memorial Hospital and National Cheng Kung University, focusing on the research topics of satellite HSI transmission tasks and natural language applications in electronic medical records. The aforementioned studies have been published in ACM and IEEE: TGRS. For work projects not mentioned, please refer to my Github.</p>
-        <p>Over the years, along with my team, I have won several significant challenges at top conferences and published papers in journals such as IEEE ICASSP and IEEE VCIP. For instance, we secured third place in the Learning to Drive Challenge at the IEEE International Conference on Computer Vision (ICCV) and first place in the COV19D Challenge.</p>
-    </div>
-</section>
+
 <section>
     <h2 class="section-title">Key Research Projects</h2>
     <div class="content">
@@ -266,7 +291,7 @@
     }
 
     // 每10秒切換一次圖片
-    setInterval(showNextSlide, 10000);
+    setInterval(showNextSlide, 5000);
 </script>
 
 </html>
