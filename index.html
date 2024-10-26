@@ -57,6 +57,42 @@
         .link:hover {
             text-decoration: underline;
         }
+    
+        .slideshow {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+    
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    
+        .slide.show {
+            opacity: 1;
+        }
+    
+        /* 針對每張圖片設置class */
+        .slide:nth-child(1) {
+            background-image: url('images/switch_image/image1.jpeg');
+        }
+    
+        .slide:nth-child(2) {
+            background-image: url('images/switch_image/image2.jpeg');
+        }
+    
+        .slide:nth-child(3) {
+            background-image: url('images/switch_image/image3.jpeg');
+        }
     </style>
 </head>
 <body>
@@ -71,7 +107,6 @@
     <p class="content">Artificial Intelligence Programmer · Artificial Intelligence Researcher · Artificial Intelligence Engineer · Software Programmer</p>
     [<a class="link" href="https://www.linkedin.com/in/chihyujiantw" target="_blank">LinkedIn</a> | <a class="link" href="https://github.com/IlikeBB?tab=repositories" target="_blank">Github</a>]
 </header>
-
 <section>
     <h2 class="section-title">關於我</h2>
     <div class="content">
@@ -82,7 +117,6 @@
         <p>多年來，我與團隊共同在頂尖會議中取得了多次重要挑戰的勝利，並在期刊如《IEEE ICASSP》和《IEEE VCIP》上發表論文。例如，我們在IEEE國際計算機視覺會議（ICCV）中的Learning to Drive挑戰賽中獲得第三名，並在COV19D挑戰賽中奪得第一名。</p>
     </div>
 </section>
-
 <section>
     <h2 class="section-title">About me</h2>
     <!-- 資歷範例 -->
@@ -94,12 +128,34 @@
     </div>
 </section>
 <section>
-    <h2 class="section-title">深度學習與生成式AI應用</h2>
+    <h2 class="section-title">Key Research Projects</h2>
     <div class="content">
-        <p><strong>流程優化與效率提升：</strong> 應用生成式AI與深度學習技術，實現自動化數據處理與檢測，減少人力需求，提升效率。</p>
-        <p><strong>工業瑕疵檢測：</strong> 結合深度學習與AOI技術，透過VLM準確標註工業產品瑕疵。</p>
-        <p><strong>醫療影像分析：</strong> 使用深度學習技術輔助醫師識別MRI等影像中的病變區域，提高診斷準確性。</p>
-        <p><strong>生成式AI部署：</strong> 應用LLM技術推動生成式AI在工業與醫療領域的實際應用。</p>
+        <h3>醫療影像 (Medical Imaging, MI)</h3>
+        <p>專注於急性缺血性中風 (AIS) MRI 影像的分割與分類。</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>開發了「語義分割導向偵測網路」(SGD-Net)，用於準確分割加權影像中的AIS病灶，並榮獲2024年未來科技獎AIoT獎項。</li>
+            <li>進一步開發了SGD-Net Plus，將病灶大小分佈納入，提升對腦損傷量化分析的應用價值。</li>
+        </ul>
+
+        <h3>高光譜影像 (Hyperspectral Imaging, HSI) <span style="color: orange;">(目前的專案工作)</span></h3>
+        <p>專注於解決高光譜影像的高效壓縮與傳輸問題。</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>開發「即時壓縮感知編碼」(RTCS)，能在有限資源下高效重建HSI影像，並榮獲2024年未來科技獎AIoT獎項。</li>
+            <li>RTCS 支援遠端設備高效重建，減少對地面計算資源的需求。</li>
+        </ul>
+
+        <h3>自然語言處理 (Natural Language Processing, NLP)</h3>
+        <p>專注於應用於醫療文本數據的分類技術。</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>開發了雙語記錄中低血壓分類模型 (MMIDHC)，並使用多語言句子BERT進行分類。</li>
+        </ul>
+
+        <h3>大型語言模型應用 (Large Language Model, LLM) <span style="color: orange;">(目前的專案工作)</span></h3>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>將生成式AI與大規模LLM應用於高光譜影像處理，提升數據復原能力。</li>
+            <li>結合AOI技術進行工業產品瑕疵檢測，實現自動化標註。</li>
+            <li>開發偵測報告生成系統，運用LLM對視覺數據進行檢測並生成報告。</li>
+        </ul>
     </div>
 </section>
 <section>
@@ -111,8 +167,32 @@
         <p><strong>Generative AI Deployment:</strong> Applying LLMs to advance practical applications of generative AI in industry and healthcare.</p>
     </div>
 </section>
-
-
+<section>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="content">
+        <div style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 5px;">專任研究助理</h3>
+            <p style="margin: 0; color: #555;"><strong>國立成功大學統計學系</strong> | 2022/12 - Present</p>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li><strong>專案管理:</strong> 管理5~8人團隊，負責協助分析醫院的醫療數據，清理數據並便於進行分析。</li>
+                <li><strong>專案執行:</strong> 執行國科會計劃，進行論文或短文發表。</li>
+                <li><strong>競賽參與:</strong> 參與多個領域內或跨領域競賽，並取得良好成績。</li>
+                <li><strong>協助指導:</strong> 協助同仁解決實驗室中遇到的研究或技術難題。</li>
+            </ul>
+            <p style="color: #888; font-style: italic;">#深度學習模型 #撰寫論文 #整合管理 #研究報告與計劃執行 #範圍管理 #專案時間與進度控管</p>
+        </div>
+        
+        <div>
+            <h3 style="margin-bottom: 5px;">醫研助理</h3>
+            <p style="margin: 0; color: #555;"><strong>長庚醫療財團法人林口長庚紀念醫院</strong> | 2020/09 - 2022/11</p>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li><strong>計畫執行:</strong> 負責醫療影像辨識相關計劃，並將成果撰寫成論文和發表。</li>
+                <li><strong>醫療數據分析:</strong> 協助同仁分析醫療數據，定期分享與指導專案的執行。</li>
+            </ul>
+            <p style="color: #888; font-style: italic;">#Python #Linux #Pytorch #Tensorflow #Firebase</p>
+        </div>
+    </div>
+</section>
 <section>
     <h2 class="section-title">Skills</h2>
     <div class="content">
@@ -129,9 +209,64 @@
         <p><strong>Tools & Platforms:</strong> Git / GitHub, Linux (Ubuntu), Docker, Jupyter Notebook</p>
     </div>
 </section>
-
-
-<!-- 可根據需要添加更多區域或圖片 -->
+<section>
+    <h2 class="section-title">Publications</h2>
+    <div class="content">
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>
+                <p><strong>Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction</strong><br>
+                <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2024</p>
+            </li>
+            <li>
+                <p><strong>Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat</strong><br>
+                <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2024</p>
+            </li>
+            <li>
+                <p><strong>Bag of Tricks of Hybrid Network for COVID-19 Detection of CT Scans</strong><br>
+                <em>IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops (ICASSPW)</em>, 2023</p>
+            </li>
+            <li>
+                <p><strong>Strong Baseline and Bag of Tricks for COVID-19 Detection of CT Scans</strong><br>
+                <em>arXiv preprint</em>, 2023</p>
+            </li>
+            <li>
+                <p><strong>Multimodality-aware Intra-dialytic Hypotension Classifier: A Bilingual NLP Approach to Classify Dialysis Records</strong><br>
+                <em>ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics</em>, 2023</p>
+            </li>
+            <li>
+                <p><strong>Strong Baseline for Vehicle Re-identification in the Wild</strong><br>
+                <em>IEEE Visual Communications and Image Processing (VCIP)</em>, 2019</p>
+            </li>
+            <li>
+                <p><strong>Semantic Segmentation Guided Detector for Segmentation, Classification, and Lesion Mapping of Acute Ischemic Stroke in MRI Images</strong><br>
+                <em>NeuroImage: Clinical</em>, 2022</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<section>
+    <h2 class="section-title">Portfolio Slideshow</h2>
+    <div class="slideshow">
+        <div class="slide show"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+</section>
 
 </body>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slideshow .slide');
+    const totalSlides = slides.length;
+
+    function showNextSlide() {
+        slides[currentSlide].classList.remove('show');
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].classList.add('show');
+    }
+
+    // 每10秒切換一次圖片
+    setInterval(showNextSlide, 10000);
+</script>
+
 </html>
