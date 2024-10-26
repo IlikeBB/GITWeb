@@ -71,6 +71,7 @@
             margin: 0 auto;
             overflow: hidden;
         }
+    
         .slide {
             position: absolute;
             width: 100%;
@@ -80,9 +81,12 @@
             opacity: 0;
             transition: opacity 1s ease-in-out;
         }
+    
         .slide.show {
             opacity: 1;
         }
+    
+        /* 針對每張圖片設置class */
         .slide:nth-child(1) {
             background-image: url('images/switch_image/image1.jpg');
         }
@@ -91,6 +95,9 @@
         }
         .slide:nth-child(3) {
             background-image: url('images/switch_image/image3.jpg');
+        }
+        .slide:nth-child(4) {
+            background-image: url('images/switch_image/image4.jpg');
         }
     </style>
 </head>
@@ -229,8 +236,8 @@
         slides[currentSlide].classList.add('show');
     }
 
-    // 每10秒切換一次圖片
-    setInterval(showNextSlide, 10000);
+    // 每5秒切換一次圖片
+    setInterval(showNextSlide, 5000);
 </script>
 
 </body>
