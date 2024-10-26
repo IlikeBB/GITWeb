@@ -29,6 +29,13 @@
             border-radius: 50%;
             border: 2px solid #000;
         }
+        .linkedln-picture {
+            width: 40px;
+            height: 40px;
+            background-image: url('images/linkedln.png');
+            background-size: cover;
+            background-position: center;
+        }
         .section-title {
             font-size: 24px;
             margin-bottom: 10px;
@@ -50,19 +57,7 @@
         .link:hover {
             text-decoration: underline;
         }
-        .language-button {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            margin-top: 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .language-button:hover {
-            background-color: #0056b3;
-        }
+    
         .slideshow {
             position: relative;
             width: 100%;
@@ -82,6 +77,19 @@
             transition: opacity 1s ease-in-out;
         }
     
+        .about-left h3, .about-right h3 {
+            font-size: 20px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+    
+        .about-left p, .about-right p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #333;
+        }
+
         .slide.show {
             opacity: 1;
         }
@@ -93,6 +101,7 @@
         .slide:nth-child(2) {
             background-image: url('images/switch_image/image2.jpeg');
         }
+        /* 針對每張圖片設置class */
         .slide:nth-child(3) {
             background-image: url('images/switch_image/image3.jpeg');
         }
@@ -106,126 +115,204 @@
 <header>
     <!-- 個人頭像 -->
     <div class="profile-picture"></div>
-    <h1 id="name-zh">簡志宇</h1>
-    <h1 id="name-en" style="display:none;">Chih-Yu Jian</h1>
+    <h1>Chih-Yu Jian</h1>
+    <h1> (簡志宇)</h1>
     <!-- 個人簡介 -->
-    <p class="content" id="work-zh">尋求工作機會</p>
-    <p class="content" id="work-en" style="display:none;">OPEN TO WORK</p>
-    <p class="content" id="roles-zh">人工智慧程式設計師 · 人工智慧研究員 · 人工智慧工程師 · 軟體程式設計師</p>
-    <p class="content" id="roles-en" style="display:none;">Artificial Intelligence Programmer · Artificial Intelligence Researcher · Artificial Intelligence Engineer · Software Programmer</p>
-    <p>[<a class="link" href="https://www.linkedin.com/in/chihyujiantw" target="_blank">LinkedIn</a> | <a class="link" href="https://github.com/IlikeBB?tab=repositories" target="_blank">Github</a>]</p>
-    <button class="language-button" id="toggle-language">切換到英文</button>
+    <p class="content">OPEN TO WORK</p>
+    <p class="content">Artificial Intelligence Programmer · Artificial Intelligence Researcher · Artificial Intelligence Engineer · Software Programmer</p>
+    [<a class="link" href="https://www.linkedin.com/in/chihyujiantw" target="_blank">LinkedIn</a> | <a class="link" href="https://github.com/IlikeBB?tab=repositories" target="_blank">Github</a> | <a class="link" href="https://github.com/IlikeBB?tab=repositories" target="_blank">ACVLAB</a>]
 </header>
-
-<section id="about-me-zh" class="content">
+<section>
     <h2 class="section-title">關於我</h2>
-    <p>我於2018年取得屏東科技大學資訊管理學系學士學位，並於2020年完成碩士學位。我的研究興趣主要集中於計算機視覺、深度學習、醫療影像處理和自然語言處理等領域，特別關注這些技術在實際應用中的創新與突破。</p>
-    <p>2020年至2022年間，我在長庚醫療財團法人進行中風MRI影像的識別研究，並開發了相關的分割與分類模型，該研究成果已發表於高影響力期刊《NeuroImage: Clinical》。自2022年起，我於遠東醫院與國立成功大學從事衛星高光譜影像（HSI）傳輸與電子病歷應用研究，這些研究成果已發表於ACM和IEEE TGRS期刊。</p>
-    <p>多年來，我與團隊積極參與多項國際頂尖會議與競賽，並獲得多項殊榮。我們的研究成果曾在《IEEE ICASSP》和《IEEE VCIP》等權威期刊上發表，並在IEEE國際計算機視覺會議（ICCV）的Learning to Drive挑戰賽中獲得第三名，以及在COV19D挑戰賽中取得第一名的佳績。</p>
+        <div>
+            <p>我於2018年取得屏東科技大學資訊管理學系學士學位，並於2020年完成碩士學位。我的研究興趣主要集中於計算機視覺、深度學習、醫療影像處理和自然語言處理等領域，特別關注這些技術在實際應用中的創新與突破。</p>
+            <p>2020年至2022年間，我在長庚醫療財團法人進行中風MRI影像的識別研究，並開發了相關的分割與分類模型，該研究成果已發表於高影響力期刊《NeuroImage: Clinical》。自2022年起，我於遠東醫院與國立成功大學從事衛星高光譜影像（HSI）傳輸與電子病歷應用研究，這些研究成果已發表於ACM和IEEE TGRS期刊。</p>
+            <p>多年來，我與團隊積極參與多項國際頂尖會議與競賽，並獲得多項殊榮。我們的研究成果曾在《IEEE ICASSP》和《IEEE VCIP》等權威期刊上發表，並在IEEE國際計算機視覺會議（ICCV）的Learning to Drive挑戰賽中獲得第三名，以及在COV19D挑戰賽中取得第一名的佳績。</p>
+        </div>
 </section>
+<section>
+<h2 class="section-title">About Me</h2>
+    <div>
+        <p>I graduated with a bachelor's degree in Information Management from Pingtung University of Science and Technology in 2018 and obtained a master's degree in 2020. My research focuses on computer vision, deep learning, medical imaging, and natural language processing.</p>
+        <p>From 2020 to 2022, I conducted stroke image recognition research in MRI at Chang Gung Hospital, published in NeuroImage: Clinical. Since 2022, I have been focusing on satellite HSI transmission and EMR research at Far Eastern Memorial Hospital and NCKU, with publications in ACM and IEEE: TGRS.</p>
+        <p>My team and I have achieved multiple awards at top conferences and published in journals such as IEEE ICASSP and IEEE VCIP. Highlights include third place in the Learning to Drive Challenge at ICCV and first place in the COV19D Challenge.</p>
+    </div>
+</section>
+<section>
+    <h2 class="section-title">研究專案</h2>
+    <div class="content">
+        <h3>醫療影像 (Medical Imaging, MI)</h3>
+        <p>專注於急性缺血性中風 (AIS) MRI 影像的分割與分類。</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>開發了「語義分割導向偵測網路」(SGD-Net)，用於準確分割加權影像中的AIS病灶，並榮獲2024年未來科技獎AIoT獎項。</li>
+            <li>進一步開發了SGD-Net Plus，將病灶大小分佈納入，提升對腦損傷量化分析的應用價值。</li>
+        </ul>
 
-<section id="about-me-en" class="content" style="display:none;">
-    <h2 class="section-title">About Me</h2>
-    <p>I graduated with a bachelor's degree in Information Management from Pingtung University of Science and Technology in 2018 and obtained a master's degree in 2020. My research focuses on computer vision, deep learning, medical imaging, and natural language processing, with a particular emphasis on innovation and practical applications in these fields.</p>
-    <p>From 2020 to 2022, I conducted stroke image recognition research in MRI at Chang Gung Hospital and developed segmentation and classification models, published in the high-impact journal NeuroImage: Clinical. Since 2022, I have been focusing on satellite hyperspectral imaging (HSI) transmission and electronic medical record applications at Far Eastern Hospital and National Cheng Kung University, with publications in ACM and IEEE TGRS.</p>
-    <p>Over the years, I have actively participated in international top conferences and competitions with my team, achieving multiple recognitions. Our research results have been published in authoritative journals such as IEEE ICASSP and IEEE VCIP. Notable achievements include third place in the Learning to Drive Challenge at the IEEE International Conference on Computer Vision (ICCV) and first place in the COV19D Challenge.</p>
+        <h3>高光譜影像 (Hyperspectral Imaging, HSI) <span style="color: orange;">(目前的專案工作)</span></h3>
+        <p>專注於解決高光譜影像的高效壓縮與傳輸問題。</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>開發「即時壓縮感知編碼」(RTCS)，能在有限資源下高效重建HSI影像，並榮獲2024年未來科技獎AIoT獎項。</li>
+            <li>RTCS 支援遠端設備高效重建，減少對地面計算資源的需求。</li>
+        </ul>
+
+        <h3>自然語言處理 (Natural Language Processing, NLP)</h3>
+        <p>專注於應用於醫療文本數據的分類技術。</p>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>開發了雙語記錄中低血壓分類模型 (MMIDHC)，並使用多語言句子BERT進行分類。</li>
+        </ul>
+
+        <h3>大型語言模型應用 (Large Language Model, LLM) <span style="color: orange;">(目前的專案工作)</span></h3>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>將生成式AI與大規模LLM應用於高光譜影像處理，提升數據復原能力。</li>
+            <li>結合AOI技術進行工業產品瑕疵檢測，實現自動化標註。</li>
+            <li>開發偵測報告生成系統，運用LLM對視覺數據進行檢測並生成報告。</li>
+        </ul>
+    </div>
 </section>
 <section class="content">
     <h2 class="section-title">Key Research Projects</h2>
-    <h3>醫療影像 (Medical Imaging, MI)</h3>
-    <p>專注於急性缺血性中風 (AIS) MRI 影像的分割與分類。</p>
+    <h3>Medical Imaging (MI)</h3>
+    <p>Focused on the segmentation and classification of Acute Ischemic Stroke (AIS) lesions in MRI images.</p>
     <ul style="list-style-type: disc; padding-left: 20px;">
-        <li>開發了「語義分割導向偵測網路」(SGD-Net)，用於準確分割加權影像中的AIS病灶，並榮獲2024年未來科技獎AIoT獎項。</li>
-        <li>進一步開發了SGD-Net Plus，將病灶大小分佈納入，提升對腦損傷量化分析的應用價值。</li>
+        <li>Developed the "Semantic Segmentation Guided Detector" (SGD-Net) for accurate segmentation of AIS lesions in weighted images, and won the 2024 Future Tech Award in AIoT.</li>
+        <li>Further developed SGD-Net Plus, incorporating lesion size distribution to enhance quantitative analysis of brain injuries.</li>
     </ul>
 
-    <h3>高光譜影像 (Hyperspectral Imaging, HSI) <span style="color: orange;">(目前的專案工作)</span></h3>
-    <p>專注於解決高光譜影像的高效壓縮與傳輸問題。</p>
+    <h3>Hyperspectral Imaging (HSI) <span style="color: orange;">(Ongoing Project)</span></h3>
+    <p>Focused on efficient compression and transmission of hyperspectral images.</p>
     <ul style="list-style-type: disc; padding-left: 20px;">
-        <li>開發「即時壓縮感知編碼」(RTCS)，能在有限資源下高效重建HSI影像，並榮獲2024年未來科技獎AIoT獎項。</li>
-        <li>RTCS 支援遠端設備高效重建，減少對地面計算資源的需求。</li>
+        <li>Developed the "Real-Time Compressed Sensing" (RTCS) algorithm for efficient reconstruction of HSI under limited resources, and won the 2024 Future Tech Award in AIoT.</li>
+        <li>RTCS supports efficient reconstruction for remote devices, reducing reliance on ground-based computing resources.</li>
     </ul>
 
-    <h3>自然語言處理 (Natural Language Processing, NLP)</h3>
-    <p>專注於應用於醫療文本數據的分類技術。</p>
+    <h3>Natural Language Processing (NLP)</h3>
+    <p>Focused on classification techniques applied to medical text data.</p>
     <ul style="list-style-type: disc; padding-left: 20px;">
-        <li>開發了雙語記錄中低血壓分類模型 (MMIDHC)，並使用多語言句子BERT進行分類。</li>
+        <li>Developed the bilingual low blood pressure classification model (MMIDHC), leveraging multilingual Sentence-BERT for classification.</li>
     </ul>
 
-    <h3>大型語言模型應用 (Large Language Model, LLM) <span style="color: orange;">(目前的專案工作)</span></h3>
+    <h3>Large Language Model Applications (LLM) <span style="color: orange;">(Ongoing Project)</span></h3>
     <ul style="list-style-type: disc; padding-left: 20px;">
-        <li>將生成式AI與大規模LLM應用於高光譜影像處理，提升數據復原能力。</li>
-        <li>結合AOI技術進行工業產品瑕疵檢測，實現自動化標註。</li>
-        <li>開發偵測報告生成系統，運用LLM對視覺數據進行檢測並生成報告。</li>
-    </ul>
-</section>
-
-<section class="content">
-    <h2 class="section-title">Publications</h2>
-    <ul style="list-style-type: disc; padding-left: 20px;">
-        <li>
-            <p><strong>Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction</strong><br>
-            <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2024</p>
-        </li>
-        <li>
-            <p><strong>Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat</strong><br>
-            <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2024</p>
-        </li>
-        <li>
-            <p><strong>Bag of Tricks of Hybrid Network for COVID-19 Detection of CT Scans</strong><br>
-            <em>IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops (ICASSPW)</em>, 2023</p>
-        </li>
-        <li>
-            <p><strong>Strong Baseline and Bag of Tricks for COVID-19 Detection of CT Scans</strong><br>
-            <em>arXiv preprint</em>, 2023</p>
-        </li>
-        <li>
-            <p><strong>Multimodality-aware Intra-dialytic Hypotension Classifier: A Bilingual NLP Approach to Classify Dialysis Records</strong><br>
-            <em>ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics</em>, 2023</p>
-        </li>
-        <li>
-            <p><strong>Strong Baseline for Vehicle Re-identification in the Wild</strong><br>
-            <em>IEEE Visual Communications and Image Processing (VCIP)</em>, 2019</p>
-        </li>
-        <li>
-            <p><strong>Semantic Segmentation Guided Detector for Segmentation, Classification, and Lesion Mapping of Acute Ischemic Stroke in MRI Images</strong><br>
-            <em>NeuroImage: Clinical</em>, 2022</p>
-        </li>
+        <li>Applied generative AI and large-scale LLMs to hyperspectral image processing, enhancing data recovery capabilities.</li>
+        <li>Combined AOI techniques for industrial defect detection, enabling automated annotation.</li>
+        <li>Developed a report generation system, utilizing LLMs for visual data detection and report generation.</li>
     </ul>
 </section>
 <section>
-    <h2 class="section-title">Event Photos</h2>
+    <h2 class="section-title">工作經驗</h2>
+    <div class="content">
+        <div style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 5px;">專任研究助理</h3>
+            <p style="margin: 0; color: #555;"><strong>國立成功大學統計學系</strong> | 2022/12 - Present</p>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li><strong>專案管理:</strong> 管理5~8人團隊，負責協助分析醫院的醫療數據，清理數據並便於進行分析。</li>
+                <li><strong>專案執行:</strong> 執行國科會計劃，進行論文或短文發表。</li>
+                <li><strong>競賽參與:</strong> 參與多個領域內或跨領域競賽，並取得良好成績。</li>
+                <li><strong>協助指導:</strong> 協助同仁解決實驗室中遇到的研究或技術難題。</li>
+            </ul>
+            <p style="color: #888; font-style: italic;">#深度學習模型 #撰寫論文 #整合管理 #研究報告與計劃執行 #範圍管理 #專案時間與進度控管</p>
+        </div>
+        
+        <div>
+            <h3 style="margin-bottom: 5px;">醫研助理</h3>
+            <p style="margin: 0; color: #555;"><strong>長庚醫療財團法人林口長庚紀念醫院</strong> | 2020/09 - 2022/11</p>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li><strong>計畫執行:</strong> 負責醫療影像辨識相關計劃，並將成果撰寫成論文和發表。</li>
+                <li><strong>醫療數據分析:</strong> 協助同仁分析醫療數據，定期分享與指導專案的執行。</li>
+            </ul>
+            <p style="color: #888; font-style: italic;">#Python #Linux #Pytorch #Tensorflow #Firebase</p>
+        </div>
+    </div>
+</section>
+<section>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="content">
+        <div style="margin-bottom: 20px;">
+            <h3 style="margin-bottom: 5px;">Research Assistant</h3>
+            <p style="margin: 0; color: #555;"><strong>Department of Statistics, National Cheng Kung University</strong> | 2022/12 - Present</p>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li><strong>Project Management:</strong> Managed a team of 5-8 members, assisting in the analysis and cleaning of medical data for hospitals to facilitate analysis.</li>
+                <li><strong>Project Execution:</strong> Executed projects funded by the National Science and Technology Council, leading to research publications and reports.</li>
+                <li><strong>Competition Participation:</strong> Engaged in various interdisciplinary and cross-field competitions, achieving notable results.</li>
+                <li><strong>Guidance and Support:</strong> Assisted colleagues in solving research or technical challenges encountered in the laboratory.</li>
+            </ul>
+            <p style="color: #888; font-style: italic;">#Deep Learning Models #Paper Writing #Integration Management #Research Reports and Project Execution #Scope Management #Project Time and Progress Control</p>
+        </div>
+        
+        <div>
+            <h3 style="margin-bottom: 5px;">Medical Research Assistant</h3>
+            <p style="margin: 0; color: #555;"><strong>Chang Gung Memorial Hospital, Linkou</strong> | 2020/09 - 2022/11</p>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li><strong>Project Execution:</strong> Responsible for medical imaging recognition projects, compiling research results into publications.</li>
+                <li><strong>Medical Data Analysis:</strong> Assisted colleagues in medical data analysis, regularly sharing and guiding project execution.</li>
+            </ul>
+            <p style="color: #888; font-style: italic;">#Python #Linux #Pytorch #Tensorflow #Firebase</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">技能 / Skills</h2>
+    <div class="content">
+        <p><strong>Programming Languages:</strong> Python</p>
+        <p><strong>Deep Learning & AI:</strong></p>
+        <ul>
+            <li>Computer Vision</li>
+            <li>Natural Language Processing (NLP)</li>
+            <li>Large Language Models (LLM)</li>
+            <li>Medical Imaging Analysis</li>
+            <li>Generative AI Applications</li>
+        </ul>
+        <p><strong>Machine Learning Frameworks:</strong> TensorFlow, PyTorch, Scikit-learn</p>
+        <p><strong>Tools & Platforms:</strong> Git / GitHub, Linux (Ubuntu), Docker, Jupyter Notebook</p>
+    </div>
+</section>
+<section>
+    <h2 class="section-title">Publications</h2>
+    <div class="content">
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>
+                <p><strong>Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction</strong><br>
+                <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2024</p>
+            </li>
+            <li>
+                <p><strong>Real-Time Compressed Sensing for Joint Hyperspectral Image Transmission and Restoration for CubeSat</strong><br>
+                <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2024</p>
+            </li>
+            <li>
+                <p><strong>Bag of Tricks of Hybrid Network for COVID-19 Detection of CT Scans</strong><br>
+                <em>IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops (ICASSPW)</em>, 2023</p>
+            </li>
+            <li>
+                <p><strong>Strong Baseline and Bag of Tricks for COVID-19 Detection of CT Scans</strong><br>
+                <em>arXiv preprint</em>, 2023</p>
+            </li>
+            <li>
+                <p><strong>Multimodality-aware Intra-dialytic Hypotension Classifier: A Bilingual NLP Approach to Classify Dialysis Records</strong><br>
+                <em>ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics</em>, 2023</p>
+            </li>
+            <li>
+                <p><strong>Strong Baseline for Vehicle Re-identification in the Wild</strong><br>
+                <em>IEEE Visual Communications and Image Processing (VCIP)</em>, 2019</p>
+            </li>
+            <li>
+                <p><strong>Semantic Segmentation Guided Detector for Segmentation, Classification, and Lesion Mapping of Acute Ischemic Stroke in MRI Images</strong><br>
+                <em>NeuroImage: Clinical</em>, 2022</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<section>
+    <h2 class="section-title">Portfolio Slideshow</h2>
     <div class="slideshow">
         <div class="slide show"></div>
         <div class="slide"></div>
         <div class="slide"></div>
     </div>
 </section>
+
+</body>
 <script>
-    const toggleButton = document.getElementById('toggle-language');
-    const nameZh = document.getElementById('name-zh');
-    const nameEn = document.getElementById('name-en');
-    const workZh = document.getElementById('work-zh');
-    const workEn = document.getElementById('work-en');
-    const rolesZh = document.getElementById('roles-zh');
-    const rolesEn = document.getElementById('roles-en');
-    const aboutMeZh = document.getElementById('about-me-zh');
-    const aboutMeEn = document.getElementById('about-me-en');
-
-    toggleButton.addEventListener('click', () => {
-        const isZhVisible = nameZh.style.display !== 'none';
-
-        nameZh.style.display = isZhVisible ? 'none' : 'block';
-        nameEn.style.display = isZhVisible ? 'block' : 'none';
-        workZh.style.display = isZhVisible ? 'none' : 'block';
-        workEn.style.display = isZhVisible ? 'block' : 'none';
-        rolesZh.style.display = isZhVisible ? 'none' : 'block';
-        rolesEn.style.display = isZhVisible ? 'block' : 'none';
-        aboutMeZh.style.display = isZhVisible ? 'none' : 'block';
-        aboutMeEn.style.display = isZhVisible ? 'block' : 'none';
-        toggleButton.textContent = isZhVisible ? '切換到中文' : 'Switch to English';
-    });
-
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slideshow .slide');
     const totalSlides = slides.length;
@@ -236,9 +323,8 @@
         slides[currentSlide].classList.add('show');
     }
 
-    // 每5秒切換一次圖片
+    // 每10秒切換一次圖片
     setInterval(showNextSlide, 5000);
 </script>
 
-</body>
 </html>
