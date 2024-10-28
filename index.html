@@ -113,7 +113,7 @@
     <!-- 個人簡介 -->
     <p class="content">OPEN TO WORK</p>
     <p class="content">Artificial Intelligence Programmer · Artificial Intelligence Researcher · Artificial Intelligence Engineer · Software Programmer</p>
-    <p>[<a class="link" href="https://www.linkedin.com/in/chihyujiantw" target="_blank">LinkedIn</a> | <a class="link" href="https://github.com/IlikeBB?tab=repositories" target="_blank">Github</a> | <a class="link" href="https://github.com/IlikeBB?tab=repositories" target="_blank">ACVLAB</a>]</p>
+    <p>[<a class="link" href="https://www.linkedin.com/in/chihyujiantw" target="_blank">LinkedIn</a> | <a class="link" href="https://github.com/IlikeBB?tab=repositories" target="_blank">Github</a> | <a class="link" href="https://sites.google.com/view/acvlab" target="_blank">ACVLAB</a>]</p>
     <button class="language-button" id="toggle-language">切換到英文</button>
 </header>
 
@@ -245,7 +245,8 @@
     </ul>
 </section>
 <section class="content">
-    <h2 class="section-title">Skills</h2>
+    <h2 id="Skills-cn" class="section-title">擅長技能&工具</h2>
+    <h2 id="Skills-en" class="section-title" style="display:none;">Skills</h2>
     <div class="content">
         <p><strong>Programming Languages:</strong> Python</p>
         <p><strong>Deep Learning & AI:</strong></p>
@@ -262,7 +263,8 @@
 </section>
 
 <section class="content">
-    <h2 class="section-title">Publications</h2>
+    <h2 id="Publications-projects-cn" class="section-title">出版論文</h2>
+    <h2 id="Publications-projects-en" class="section-title" style="display:none;">Publications</h2>
     <ul style="list-style-type: disc; padding-left: 20px;">
         <li>
             <p><strong>Revisiting Vision-Language Features Adaptation and Inconsistency for Social Media Popularity Prediction</strong><br>
@@ -294,7 +296,6 @@
         </li>
     </ul>
 </section>
-
 <section>
     <h2 class="section-title">Event Photo (活動照片)</h2>
     <div class="slideshow">
@@ -312,6 +313,10 @@
     const workExperienceEn = document.getElementById('work-experience-en');
     const researchprojectsZH = document.getElementById('research-projects-zh');
     const researchprojectsEN = document.getElementById('research-projects-en');
+    const PublicationsprojectsZH = document.getElementById('Publications-projects-cn');
+    const PublicationsprojectsEN = document.getElementById('Publications-projects-en');
+    const SkillssZH = document.getElementById('Skills-cn');
+    const SkillsEN = document.getElementById('Skills-en');
 
 
     toggleButton.addEventListener('click', () => {
@@ -323,6 +328,10 @@
         workExperienceEn.style.display = isZhVisible ? 'block' : 'none';
         researchprojectsZH.style.display = isZhVisible ? 'none' : 'block';
         researchprojectsEN.style.display = isZhVisible ? 'block' : 'none';
+        PublicationsprojectsZH.style.display = isZhVisible ? 'none' : 'block';
+        PublicationsprojectsEN.style.display = isZhVisible ? 'block' : 'none';
+        SkillssZH.style.display = isZhVisible ? 'none' : 'block';
+        SkillsEN.style.display = isZhVisible ? 'block' : 'none';
         toggleButton.textContent = isZhVisible ? '切換到中文' : 'Switch to English';
     });
 
